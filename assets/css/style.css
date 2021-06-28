@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #000;
+    --primary-color: #292929;
     --secondary-color: #0bda6f;
     --tertiary-color: #dedede;
 }
@@ -69,12 +69,184 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--tertiary-color);
     border-radius: 5px;
-    text-shadow: none;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
     background-color: rgb(222, 222, 222, 0.3);
-    text-decoration: underline;
 }
 
+/* section */
+section {
+    padding: 60px;
+}
 
+.hero {
+    /* background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%; */
+    /* for fancy stuff later */
+    text-align: right;
+}
+
+#aboutMe {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 110px;
+}
+
+.aboutMeTitle {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20%;
+    justify-content:flex-start;
+    align-content: stetch;
+    height: auto;
+    font-size: 30px;
+}
+
+.aboutMeBody {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 3;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 80%;
+    padding-left: 2%;
+}
+
+#work {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 110px;
+}
+
+.workTitle {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20%;
+    justify-content:flex-start;
+    align-content: stetch;
+    height: auto;
+    font-size: 30px;
+}
+
+.workBody {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 80%;
+}
+
+.workLinks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 80%;
+}
+
+.work1 {
+    flex: 1 0 100%;
+    align-self: auto;
+    border: 5px solid var(--primary-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.work2 {
+    flex: 50%;
+    align-self: auto;
+    border: 5px solid var(--primary-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.work3 {
+    flex: 50%;
+    align-self: auto;
+    border: 5px solid var(--primary-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.work4 {
+    flex: 50%;
+    align-self: auto;
+    border: 5px solid var(--primary-color);
+    overflow: hidden;
+    position: relative;
+    /* margin: 2px; */
+}
+
+.work5 {
+    flex: 50%;
+    align-self: auto;
+    border: 5px solid var(--primary-color);
+    /* margin: 1px; */
+    max-height: fit-content;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 30vh;
+    z-index: -1;
+}
+
+h3 {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    background-color: #292929;
+    border: 50px #999;
+    bottom: 20px;
+    left: 15px;
+    color: #fff;
+    font-size: 25px;
+    width: auto;
+}
+
+.linkSubtitle {
+    /* background-color: #292929; */
+    color: #fff;
+    font-size: 13px;
+    bottom: 10px;
+    left: 15px;
+    font-weight:100;
+    width: auto;
+    border: 50px #999;
+}
+
+#contactMe {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 110px;
+}
+
+.contactTitle {
+    display: flex;
+    flex-flow: row wrap;
+    width: 20%;
+    justify-content:flex-start;
+    align-content: stetch;
+    height: auto;
+    font-size: 30px;
+    border: 1px dashed;
+}
+
+.contactInfo {
+    border: 1px dashed;
+    justify-content: spaced-around;
+    width: 80%;
+    max-width: 80%;
+}
 
 /* Footer */
 footer {
@@ -100,128 +272,4 @@ footer div {
 
 footer a {
     color: var(--secondary-color);
-}
-
-/* section */
-section {
-    padding: 60px;
-}
-
-.hero {
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    flex-wrap: wrap;
-    background-attachment: fixed;
-    background-position: 80%;
-}
-
-#aboutMe {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 110px;
-}
-
-#work {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 110px;
-}
-
-#contactMe {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 110px;
-}
-
-.sectionTitle {
-    display: flex;
-    flex-flow: column wrap;
-    width: auto;
-    justify-content:flex-start;
-    align-content: stetch;
-    height: auto;
-    /* flex-grow: 1; */
-    border: 1px solid;
-    font-size: 30px;
-}
-
-.aboutMe {
-    display: flex;
-    flex-flow: row wrap;
-    flex-grow: 3;
-    justify-content: space-around;
-    border: 1px solid;
-    width: 70%;
-    padding-left: 2%;
-}
-
-.flexRow {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: auto;
-    /* flex-grow: 3; */
-    /* border: 1px solid; */
-}
-
-.workLinks {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 70%;
-    /* float: right; */
-    border: 1px solid;
-}
-
-.work1 {
-    flex: 1 0 100%;
-    align-self: auto;
-    border: 1px solid;
-    padding: 1%;
-    overflow: hidden;
-}
-
-.work2 {
-    flex: 50%;
-    align-self: auto;
-    border: 1px solid;
-    padding: 1%;
-    overflow: hidden;
-}
-
-.work3 {
-    flex: 50%;
-    align-self: auto;
-    border: 1px solid;
-    padding: 1%;
-    overflow: hidden;
-}
-
-.work4 {
-    flex: 50%;
-    align-self: auto;
-    border: 1px solid;
-    padding: 1%;
-    overflow: hidden;
-}
-
-.work5 {
-    flex: 50%;
-    align-self: auto;
-    border: 1px solid;
-    padding: 1%;
-    max-height: fit-content;
-    overflow: hidden;
-    /* background-image: url(../images/runBuddy.jpg) no-repeat fixed; */
-}
-
-img {
-    display: flex;
-    object-fit: cover;
-    width: 65vh;
-    height: 20vh;
-    z-index: -1;
 }
