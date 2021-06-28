@@ -1,7 +1,7 @@
 # 02_Professional_Profile
 Weekly Challenge 02 - Professional Profile
 
-https://jonzyuen/github.io/02_Professional_Profile
+https://jonzyuen.github.io/02_Professional_Profile/
 
 Client Criteria:
 GIVEN I need to sample a potential employee's previous work
