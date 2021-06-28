@@ -16,7 +16,7 @@ body {
     background-color: var(--tertiary-color);
 }
 
-/* Header / Nav */
+/* Header start*/
 header {
     padding: 30px 25px;
     background: rgb(0,0,0);
@@ -72,12 +72,14 @@ header nav ul li a:hover {
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
     background-color: rgb(222, 222, 222, 0.3);
 }
+/* Header end */
 
 /* section */
 section {
     padding: 60px;
 }
 
+/* Hero start */
 .hero {
     /* background-size: cover;
     background-position: center;
@@ -87,10 +89,12 @@ section {
     flex-wrap: wrap;
     background-attachment: fixed;
     background-position: 80%; */
-    /* for fancy stuff later */
+    /* for later enhancement */
     text-align: right;
 }
+/* Hero end */
 
+/* About Me start */
 #aboutMe {
     display: flex;
     flex-flow: row wrap;
@@ -116,7 +120,9 @@ section {
     max-width: 80%;
     padding-left: 2%;
 }
+/* About Me end */
 
+/* Work start */
 #work {
     display: flex;
     flex-flow: row wrap;
@@ -153,7 +159,6 @@ section {
     flex: 1 0 100%;
     align-self: auto;
     border: 5px solid var(--primary-color);
-    overflow: hidden;
     position: relative;
 }
 
@@ -161,7 +166,6 @@ section {
     flex: 50%;
     align-self: auto;
     border: 5px solid var(--primary-color);
-    overflow: hidden;
     position: relative;
 }
 
@@ -169,7 +173,6 @@ section {
     flex: 50%;
     align-self: auto;
     border: 5px solid var(--primary-color);
-    overflow: hidden;
     position: relative;
 }
 
@@ -177,18 +180,14 @@ section {
     flex: 50%;
     align-self: auto;
     border: 5px solid var(--primary-color);
-    overflow: hidden;
     position: relative;
-    /* margin: 2px; */
 }
 
 .work5 {
     flex: 50%;
     align-self: auto;
     border: 5px solid var(--primary-color);
-    /* margin: 1px; */
     max-height: fit-content;
-    overflow: hidden;
     position: relative;
 }
 
@@ -214,7 +213,6 @@ h3 {
 }
 
 .linkSubtitle {
-    /* background-color: #292929; */
     color: #fff;
     font-size: 13px;
     bottom: 10px;
@@ -223,7 +221,9 @@ h3 {
     width: auto;
     border: 50px #999;
 }
+/* Work end */
 
+/* Contact Me start */
 #contactMe {
     display: flex;
     flex-flow: row wrap;
@@ -232,44 +232,43 @@ h3 {
 
 .contactTitle {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     width: 20%;
     justify-content:flex-start;
     align-content: stetch;
     height: auto;
     font-size: 30px;
-    border: 1px dashed;
 }
 
 .contactInfo {
-    border: 1px dashed;
-    justify-content: spaced-around;
-    width: 80%;
-    max-width: 80%;
+    justify-content: center;
+    width: 15%;
+    max-width: 15%;
+    text-align: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 3vh;
+    padding-left: 10px;
+    text-decoration-line: none;
 }
 
-/* Footer */
+.contactInfo a:visited {
+    text-decoration-line: none;
+    color: var(--primary-color);
+}
+/* Contact Me end */
+
+/* Footer start*/
 footer {
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 30px 25px;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(222,222,222,1) 0%), rgba(111,111,111,1) 66%, rgba(0,0,0,1) 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(111,111,111,1) 66%, rgba(222,222,222,1) 100%);
+    display: block;
+    color: var(--tertiary-color);
 }
 
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    line-height: 1.5;
+h4 {
     text-align: right;
+    font-weight: 200;
 }
-
-footer a {
-    color: var(--secondary-color);
-}
+/* Footer end */
